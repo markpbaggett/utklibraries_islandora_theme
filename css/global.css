@@ -404,7 +404,7 @@ a:active {
      color: #F77F00;
      }
 .field a:active {
-    color #F77F00 !important;
+    color: #F77F00 !important;
     }
 .view a:link {
      color: #517C96;
@@ -576,7 +576,7 @@ h1, h2 {
 .block-jump-menu-m-menu-utk-toolbar select {
    background-color: #4C4D4F;
    color: #A8A7A3;
-   box-shadow: 3px 3px 3px rgba (0, 0, 0, 0.2);
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
    margin: 0em 0 0 0%;
    padding: 2px 0 5px 4%;
    width: 90%;
