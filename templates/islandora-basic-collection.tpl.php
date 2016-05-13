@@ -23,6 +23,13 @@
                 <strong><?php print filter_xss($associated_object['title_link']); ?></strong>
               <?php endif; ?>
             </dd>
+            <?php if (isset($associated_object['dc_array']['dc:date']['value'])): ?>
+                <dd class="collection-value <?php print $associated_object['dc_array']['dc:date']['class']; ?>">
+                    <?php
+                    $date = explode(",", $associated_object['dc_array']['dc:date']['value']);
+                    print filter_xss($date[0]); ?>
+                </dd>
+            <?php endif; ?>
             <?php if (isset($associated_object['dc_array']['dc:description']['value'])): ?>
               <dd class="collection-value <?php print $associated_object['dc_array']['dc:description']['class']; ?>">
                 <?php print filter_xss($associated_object['dc_array']['dc:description']['value']); ?>
